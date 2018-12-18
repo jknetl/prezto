@@ -38,7 +38,7 @@ fi
 
 # import hhigliht function from paoloantiori
 # https://github.com/paoloantinori/hhighlighter
-source "$HOME/.zprezto/runcoms/h.sh"
+source "$HOME/.h.sh"
 
 # Ruby ENV completion
 eval "$(rbenv init -)"
