@@ -11,3 +11,34 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Do not share history between sessions
+unsetopt SHARE_HISTORY
+
+setopt nohup # and dont kill BG jobs when shell exits
+setopt notify # notify of BG job completion immediately
+setopt recexact # recognise exact, ambiguous matches
+setopt completeinword          # not just at the end
+setopt alwaystoend             # when complete from middle, move cursor
+setopt promptcr # ensure a new line before prompt is drawn
+setopt interactivecomments # escape commands so i can use them later
+
+# =========================== Local changes ==================================
+
+# Load aliases
+if [[ -s "~/.aliases" ]]; then
+    . "~/.aliases"
+fi
+
+# load bash/zsh functions
+if [[ -s "~/.functions" ]]; then
+    . "~/.functions"
+fi
+
+
+# import hhigliht function from paoloantiori
+# https://github.com/paoloantinori/hhighlighter
+source "$HOME/.zprezto/runcoms/h.sh"
+
+# Ruby ENV completion
+eval "$(rbenv init -)"
