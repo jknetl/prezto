@@ -26,15 +26,14 @@ setopt interactivecomments # escape commands so i can use them later
 # =========================== Local changes ==================================
 
 # Load aliases
-if [[ -s "~/.aliases" ]]; then
-    . "~/.aliases"
+if [[ -s "$HOME/.aliases" ]]; then
+    . "$HOME/.aliases"
 fi
 
 # load bash/zsh functions
-if [[ -s "~/.functions" ]]; then
-    . "~/.functions"
+if [[ -s "$HOME/.functions" ]]; then
+    . "$HOME/.functions"
 fi
-
 
 # import hhigliht function from paoloantiori
 # https://github.com/paoloantinori/hhighlighter

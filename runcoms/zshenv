@@ -11,6 +11,6 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 # load environment variables
-if [[ -s "~/.env" ]]; then
-    . "~/.env"
+if [[ -s "$HOME/.env" ]]; then
+    . "$HOME/.env"
 fi
