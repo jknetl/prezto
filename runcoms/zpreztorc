@@ -42,7 +42,8 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'git' \
   'tmux' \
-  'history-substring-search'
+  'history-substring-search' \
+  'ssh'
 
 #
 # Autosuggestions
