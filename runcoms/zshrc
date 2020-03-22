@@ -24,6 +24,8 @@ setopt promptcr # ensure a new line before prompt is drawn
 setopt interactivecomments # escape commands so i can use them later
 
 # =========================== Local changes ==================================
+#
+fpath=(~/.zsh/completion $fpath)
 
 # Load aliases
 if [[ -s "$HOME/.aliases" ]]; then
